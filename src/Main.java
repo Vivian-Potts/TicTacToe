@@ -67,11 +67,13 @@ public class Main {
         }
         for (int i = 0; i < 3; i++) {
             //Check Vertical
-            if(board[i] == board[i+3]&& board[i] == board[i+6] && board[i] != ' '){
+            if (board[i] == board[i + 3] && board[i] == board[i + 6] && board[i] != ' ') {
                 win(board, board[i]);
             }
+        }
+        for (int i = 0; i <=6; i+= 3) {
             //Check Horizontal
-            if(board[i] == board[i+1]&& board[i] == board[i+2] && board[i] != ' '){
+            if (board[i] == board[i + 1] && board[i] == board[i + 2] && board[i] != ' ') {
                 win(board, board[i]);
             }
         }
