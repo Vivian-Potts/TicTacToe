@@ -8,12 +8,13 @@ public class Main {
         char[] board = {' ',' ',' ',' ',' ',' ',' ',' ',' '};
 
 
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < 4; i++) {
 
 
             board = playerTurn('X', board);
             board = playerTurn('0', board);
         }
+        board = playerTurn('0', board);
         System.out.println("Tie game!");
 
     }
